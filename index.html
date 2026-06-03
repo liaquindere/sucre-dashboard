@@ -727,19 +727,19 @@
   </div>
 
   <div class="cards">
-    <div class="card verde">
+    <div class="card vermelho">
       <div class="card-trend">⚙️</div>
-      <div class="card-label">OEE Abril</div>
-      <div class="card-value">98,2%</div>
-      <div class="card-meta">Meta: 85% · Benchmark: 75–85%</div>
-      <div class="card-badge verde">✓ +13,2pp acima da meta</div>
+      <div class="card-label">Eficiência Empanados (Mai)</div>
+      <div class="card-value">68,4%</div>
+      <div class="card-meta">Real. 39.100 kg / Plan. 57.200 kg</div>
+      <div class="card-badge vermelho">⚠ Menor eficiência do ano</div>
     </div>
-    <div class="card amarelo">
+    <div class="card vermelho">
       <div class="card-trend">📦</div>
-      <div class="card-label">Volume Produzido (Abr)</div>
-      <div class="card-value">46.297 kg</div>
-      <div class="card-meta">Meta: 47.124 kg · 98,2% da meta</div>
-      <div class="card-badge amarelo">98,2% da meta</div>
+      <div class="card-label">Volume Produzido (Mai)</div>
+      <div class="card-value">39.100 kg</div>
+      <div class="card-meta">Meta: 57.200 kg · -18.100 kg atraso</div>
+      <div class="card-badge vermelho">⚠ 68,4% da meta</div>
     </div>
     <div class="card verde">
       <div class="card-trend">📊</div>
@@ -773,13 +773,80 @@
     <table>
       <tr><th>KPI</th><th>Meta</th><th>Jan</th><th>Fev</th><th>Mar</th><th>Abr</th><th>Mai</th><th>Média YTD</th><th>Status</th></tr>
       <tr><td>OEE — Eficiência Global (%)</td><td>85%</td><td>96,9%</td><td>88,0%</td><td>89,9%</td><td>98,2%</td><td>—</td><td>93,3%</td><td><span class="pill verde">Verde</span></td></tr>
-      <tr><td>Volume Produzido (kg/mês)</td><td>47.124</td><td>45.674</td><td>41.489</td><td>42.384</td><td>46.297</td><td>—</td><td>43.961</td><td><span class="pill amarelo">Amarelo</span></td></tr>
+      <tr><td>Volume Produzido (kg/mês)</td><td>47.124</td><td>45.674</td><td>41.489</td><td>42.384</td><td>46.297</td><td>39.100</td><td>42.989</td><td><span class="pill vermelho">Vermelho</span></td></tr>
       <tr><td>Acurácia de Estoque</td><td>97%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>—</td><td>100%</td><td><span class="pill verde">Verde</span></td></tr>
       <tr><td>Taxa de Retrabalho</td><td>2%</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><span class="pill neutro">Aguardando</span></td></tr>
       <tr><td>Conformidade Qualidade</td><td>98%</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><span class="pill neutro">Aguardando</span></td></tr>
       <tr><td>Disponibilidade Mecânica</td><td>92%</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><span class="pill neutro">Aguardando</span></td></tr>
     </table>
   </div>
+
+  <!-- TORRE DE CONTROLE EMPANADOS -->
+  <div class="section-header" style="margin-top:32px">
+    <div class="section-icon">🏗️</div>
+    <div>
+      <div class="section-title" style="font-size:1.05rem">Torre de Controle — Linha Empanados</div>
+      <div class="section-sub">Mini Coxinhas &amp; Bolaço · Maio 2026</div>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card vermelho">
+      <div class="card-trend">📦</div>
+      <div class="card-label">Qtd Produzida (Mai)</div>
+      <div class="card-value">39.100 kg</div>
+      <div class="card-meta">Meta: 57.200 kg · 25 dias de produção</div>
+      <div class="card-badge vermelho">⚠ −18.100 kg vs planejado</div>
+    </div>
+    <div class="card vermelho">
+      <div class="card-trend">⚡</div>
+      <div class="card-label">Eficiência Maio</div>
+      <div class="card-value">68,4%</div>
+      <div class="card-meta">Planejado 57.200 · Realizado 39.100</div>
+      <div class="card-badge vermelho">⚠ Menor eficiência Jan–Mai</div>
+    </div>
+    <div class="card amarelo">
+      <div class="card-trend">♻️</div>
+      <div class="card-label">Desperdício Maio</div>
+      <div class="card-value">1,60%</div>
+      <div class="card-meta">626 kg desperdiçados em Maio</div>
+      <div class="card-badge amarelo">Principal: Massa Coxinha 520 kg</div>
+    </div>
+    <div class="card neutro">
+      <div class="card-trend">📊</div>
+      <div class="card-label">Média Diária (Mai)</div>
+      <div class="card-value">1.564 kg</div>
+      <div class="card-meta">Meta diária: 2.200 kg · 3 turnos</div>
+      <div class="card-badge neutro">↓ vs Abr (1.952 kg/dia)</div>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-box">
+      <div class="chart-title">🏗️ Produção Mensal Empanados (kg) × Eficiência (%)</div>
+      <div class="chart-wrap"><canvas id="chartTorre"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">📋 Performance Semanal — Maio 2026</div>
+      <div class="chart-wrap" style="overflow-x:auto;display:flex;align-items:center">
+        <table style="width:100%;font-size:0.81rem;border-collapse:collapse">
+          <tr style="background:#f8f8f8"><th style="padding:8px 10px;text-align:left;border-bottom:2px solid #ddd">Semana</th><th style="padding:8px;text-align:right;border-bottom:2px solid #ddd">Realizado</th><th style="padding:8px;text-align:right;border-bottom:2px solid #ddd">Meta</th><th style="padding:8px;text-align:right;border-bottom:2px solid #ddd">Atraso</th><th style="padding:8px;text-align:right;border-bottom:2px solid #ddd">Eficiência</th></tr>
+          <tr><td style="padding:7px 10px;border-bottom:1px solid #eee">1ª Semana</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">2.380</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">4.400</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#e53935">−2.021</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#e53935;font-weight:600">54%</td></tr>
+          <tr><td style="padding:7px 10px;border-bottom:1px solid #eee">2ª Semana</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">6.780</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">13.200</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#e53935">−6.420</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#e53935;font-weight:600">51%</td></tr>
+          <tr><td style="padding:7px 10px;border-bottom:1px solid #eee">3ª Semana</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">10.410</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">13.200</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#e53935">−2.790</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#fb8c00;font-weight:600">79%</td></tr>
+          <tr><td style="padding:7px 10px;border-bottom:1px solid #eee">4ª Semana</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">9.927</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">13.200</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#e53935">−3.273</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#fb8c00;font-weight:600">75%</td></tr>
+          <tr><td style="padding:7px 10px;border-bottom:1px solid #eee">5ª Semana</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">9.604</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">13.200</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#e53935">−3.596</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#fb8c00;font-weight:600">73%</td></tr>
+          <tr style="font-weight:700;background:#fff3e0"><td style="padding:8px 10px">Total Maio</td><td style="padding:8px;text-align:right">39.100</td><td style="padding:8px;text-align:right">57.200</td><td style="padding:8px;text-align:right;color:#e53935">−18.100</td><td style="padding:8px;text-align:right;color:#e53935">68%</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-box">
+    <div class="chart-title" style="margin-bottom:12px">🥇 Top SKUs — Volume Produzido por Linha (kg) · Mai 2026</div>
+    <div class="chart-wrap" style="height:200px"><canvas id="chartTorreSKU"></canvas></div>
+  </div>
+
 </div>
 
 <!-- ════════════════════════════════════════════════ -->
@@ -1043,7 +1110,7 @@ new Chart(document.getElementById('chartVolume'), {
   data: {
     labels: meses,
     datasets: [
-      { label: 'Volume Realizado (kg)', data: [45674, 41489, 42384, 46297, null],
+      { label: 'Volume Realizado (kg)', data: [45674, 41489, 42384, 46297, 39100],
         backgroundColor: GREEN+'BB', borderRadius: 6 },
       { label: 'Meta (47.124 kg)', data: [47124, 47124, 47124, 47124, 47124],
         type: 'line', borderColor: YELLOW, borderDash: [5,5],
@@ -1051,6 +1118,63 @@ new Chart(document.getElementById('chartVolume'), {
     ]
   },
   options: lineOpts('kg')
+});
+
+
+// ── ISABEL: Torre de Controle — Empanados ────────────────────────────
+new Chart(document.getElementById('chartTorre'), {
+  type: 'bar',
+  data: {
+    labels: meses,
+    datasets: [
+      { label: 'Realizado (kg)', data: [51077, 39715, 40341, 44893, 39100],
+        backgroundColor: [GREEN+'BB', GREEN+'BB', GREEN+'BB', GREEN+'BB', RED+'BB'],
+        borderRadius: 6, yAxisID: 'yVol' },
+      { label: 'Meta (kg)', data: [58800, 48400, 55800, 52200, 57200],
+        type: 'line', borderColor: YELLOW, borderDash: [5,5],
+        pointRadius: 0, fill: false, yAxisID: 'yVol' },
+      { label: 'Eficiência (%)', data: [87, 82, 72, 86, 68],
+        type: 'line', borderColor: BLUE, backgroundColor: BLUE+'22',
+        tension: 0.4, pointRadius: 5, pointBackgroundColor: BLUE,
+        fill: false, yAxisID: 'yEf' }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom', labels: { boxWidth: 10 } } },
+    scales: {
+      yVol: { type: 'linear', position: 'left', grid: { color: '#ECF0F1' },
+              ticks: { callback: v => v.toLocaleString('pt-BR') + ' kg' } },
+      yEf:  { type: 'linear', position: 'right', min: 0, max: 100,
+              grid: { display: false },
+              ticks: { callback: v => v + '%' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ── ISABEL: Torre de Controle — Top SKUs ─────────────────────────────
+new Chart(document.getElementById('chartTorreSKU'), {
+  type: 'bar',
+  data: {
+    labels: ['MC Frango 375G','MC Frango 220G','MC Carne de Sol 220G','MC Frango 850G','MC Queijo 220G'],
+    datasets: [{
+      data: [11351, 6675, 6618, 6222, 3621],
+      backgroundColor: [RED+'CC', RED+'99', RED+'77', BLUE+'BB', BLUE+'88'],
+      borderRadius: 4
+    }]
+  },
+  options: {
+    indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ' ' + ctx.parsed.x.toLocaleString('pt-BR') + ' kg' } }
+    },
+    scales: {
+      x: { grid: { color: '#ECF0F1' }, ticks: { callback: v => v.toLocaleString('pt-BR') } },
+      y: { grid: { display: false }, ticks: { font: { size: 10 } } }
+    }
+  }
 });
 
 // ── LIDIANE: Absenteísmo ──────────────────────────────────────────
