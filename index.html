@@ -546,6 +546,55 @@
     </div>
   </div>
 
+  <!-- Radar Financeiro -->
+  <div class="section-header" style="margin-top:28px">
+    <div class="section-icon">📊</div>
+    <div>
+      <div class="section-title" style="font-size:1rem">Radar Financeiro — Jan–Mai 2026</div>
+      <div class="section-sub">DRE consolidada · Fonte: BP_Sucré 2033.xlsx</div>
+    </div>
+  </div>
+
+  <div class="cards" style="grid-template-columns:repeat(4,1fr)">
+    <div class="card verde">
+      <div class="card-trend">💡</div>
+      <div class="card-label">EBITDA YTD</div>
+      <div class="card-value">R$ 1.373k</div>
+      <div class="card-meta">Margem: 14,9% · Meta: 20%</div>
+      <div class="card-badge verde">✓ Positivo em todos os meses</div>
+    </div>
+    <div class="card verde">
+      <div class="card-trend">📈</div>
+      <div class="card-label">Margem Bruta (Mai) 🏆</div>
+      <div class="card-value">61,9%</div>
+      <div class="card-meta">Acima da meta 60% · CMV R$ 539k</div>
+      <div class="card-badge verde">✓ Melhor do ano</div>
+    </div>
+    <div class="card vermelho">
+      <div class="card-trend">💸</div>
+      <div class="card-label">Juros YTD ⚠</div>
+      <div class="card-value">R$ 1.028k</div>
+      <div class="card-meta">11,1% da RL · Elimina EBIT R$ 1.099k</div>
+      <div class="card-badge vermelho">⚠ Principal gargalo</div>
+    </div>
+    <div class="card amarelo">
+      <div class="card-trend">📉</div>
+      <div class="card-label">Resultado Líquido YTD</div>
+      <div class="card-value">−R$ 112k</div>
+      <div class="card-meta">Mai positivo +R$ 281k · virada de tendência</div>
+      <div class="card-badge amarelo">Mai verde · YTD negativo</div>
+    </div>
+  </div>
+
+  <div style="background:#fff3e0;border-left:4px solid #D4A93A;border-radius:0 8px 8px 0;padding:14px 18px;margin:16px 0;font-size:0.85rem;color:#555">
+    <strong style="color:#D4A93A">📌 Insight-chave para o conselho:</strong>
+    O EBITDA YTD é positivo em R$ 1.373k (saudável), mas despesas financeiras de <strong>R$ 1.028k</strong>
+    (juros s/ empréstimos R$ 527k + antecipação recebíveis R$ 361k) consomem 74,9% do EBITDA.
+    Maio foi o primeiro mês com resultado claramente positivo (+R$ 281k, margem 13,6%) — sinaliza que
+    a estrutura operacional está se fortalecendo. A redução do endividamento e do uso de antecipação
+    de recebíveis é a principal alavanca de resultado para o 2º semestre.
+  </div>
+
   <!-- Faturamento chart -->
   <div class="chart-box" style="margin-top:16px">
     <div class="chart-title">📈 Faturamento Mensal — Realizado × Programado (R$ mil)</div>
@@ -1021,6 +1070,36 @@
     </div>
   </div>
 
+
+  <div class="alert" style="margin-top:20px">
+    ⚠️ <strong>3 Alertas da DRE — Jan–Mai 2026:</strong>
+    &nbsp;①&nbsp;Despesas financeiras (juros + antecipação) consumiram <strong>R$ 1.028k YTD</strong> — 11,1% da receita líquida, zerando o EBIT positivo de R$ 1.099k.
+    &nbsp;②&nbsp;Consultoria em escalada: Jan R$ 30k → Mai <strong>R$ 85k (+180%)</strong> = R$ 258k acumulado.
+    &nbsp;③&nbsp;Frete disparou em Maio: <strong>R$ 70k</strong> (vs média R$ 35k nos 4 meses anteriores) — 4,2% do faturamento, acima da meta de 3%.
+  </div>
+
+  <div class="charts-row" style="margin-top:20px">
+    <div class="chart-box">
+      <div class="chart-title">💸 Despesas Financeiras — Composição Mensal (R$ mil)</div>
+      <div class="chart-wrap"><canvas id="chartDespFin"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">⚠️ Alertas de Gestão — Consultoria × Frete s/ Vendas (R$ mil)</div>
+      <div class="chart-wrap"><canvas id="chartAlertas"></canvas></div>
+    </div>
+  </div>
+
+  <div class="charts-row" style="margin-top:16px">
+    <div class="chart-box">
+      <div class="chart-title">🔄 Devoluções — R$ mil × % da Receita Bruta</div>
+      <div class="chart-wrap"><canvas id="chartDevolucoes"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">🗂️ Composição Custos Fixos × Variáveis (R$ mil/mês)</div>
+      <div class="chart-wrap"><canvas id="chartFixVar"></canvas></div>
+    </div>
+  </div>
+
   <div class="table-box">
     <div class="chart-title" style="margin-bottom:12px">📋 KPIs Financeiros — Julia</div>
     <table>
@@ -1038,7 +1117,7 @@
       <tr><td>PMP — Pagamento (dias)</td><td>50d</td><td>34</td><td>35</td><td>35</td><td>35</td><td>—</td><td>34,8</td><td><span class="pill vermelho">Vermelho</span></td></tr>
       <tr><td>PME — Estoque (dias)</td><td>10d</td><td>17</td><td>20</td><td>22</td><td>19</td><td>—</td><td>19,5</td><td><span class="pill amarelo">Amarelo</span></td></tr>
       <tr><td>Custo Frete / Faturamento</td><td>3%</td><td>2,2%</td><td>3,0%</td><td>2,5%</td><td>2,9%</td><td style="color:var(--pink)">4,2%</td><td>3,0%</td><td><span class="pill amarelo">Amarelo</span></td></tr>
-      <tr><td>Devoluções / Receita Bruta</td><td>&lt;3%</td><td>6,1%</td><td>6,4%</td><td>3,4%</td><td>7,1%</td><td>3,7%</td><td>5,3%</td><td><span class="pill vermelho">Vermelho</span></td></tr>
+      <tr><td>Devoluções / Rec. Bruta</td><td>&lt;3%</td><td style="color:var(--pink)">6,5%</td><td style="color:var(--pink)">6,8%</td><td style="color:var(--green)">0,9%</td><td style="color:var(--green)">1,0%</td><td>4,0%</td><td style="color:var(--pink)">3,8%</td><td><span class="pill vermelho">Vermelho</span></td></tr>
     </table>
   </div>
 </div>
@@ -1402,23 +1481,139 @@ new Chart(document.getElementById('chartDRE'), {
   data: {
     labels: meses,
     datasets: [
-      { label: 'CMV', data: [598.29, 582.85, 599.71, 653.29, 538.64],
-        backgroundColor: RED+'88', borderRadius: 0 },
-      { label: 'Custo Pessoal Prod.', data: [201.49, 208.62, 207.04, 216.14, 219.47],
-        backgroundColor: RED+'55', borderRadius: 0 },
-      { label: 'Despesas Operacionais', data: [683.22, 761.68, 701.51, 783.03, 769.62],
-        backgroundColor: YELLOW+'88', borderRadius: 0 },
+      { label: 'CMV (Matéria-Prima)', data: [598.29, 582.85, 599.71, 653.29, 538.64],
+        backgroundColor: RED+'CC', borderRadius: 0 },
+      { label: 'Outros Custos Produção', data: [233.57, 285.54, 257.92, 263.25, 248.44],
+        backgroundColor: RED+'77', borderRadius: 0 },
+      { label: 'Despesas Operacionais', data: [683.22, 754.96, 701.51, 693.04, 770.62],
+        backgroundColor: YELLOW+'99', borderRadius: 0 },
       { label: 'EBITDA', data: [206.18, 94.46, 455.04, 112.15, 505.30],
         backgroundColor: GREEN+'BB', borderRadius: 4 }
     ]
   },
   options: {
     responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { position: 'bottom', labels: { boxWidth: 10 } } },
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 10 } },
+      tooltip: { callbacks: { label: ctx => ' ' + ctx.dataset.label + ': R$' + ctx.parsed.y.toFixed(1) + 'k' } }
+    },
     scales: {
       x: { stacked: true, grid: { display: false } },
       y: { stacked: true, grid: { color: '#ECF0F1' },
            ticks: { callback: v => 'R$' + v + 'k' } }
+    }
+  }
+});
+
+
+// ── JULIA: Despesas Financeiras — Composição ─────────────────────────
+new Chart(document.getElementById('chartDespFin'), {
+  type: 'bar',
+  data: {
+    labels: meses,
+    datasets: [
+      { label: 'Juros s/ Empréstimos', data: [142.24, 74.47, 138.92, 107.73, 63.85],
+        backgroundColor: RED+'CC', borderRadius: 0 },
+      { label: 'Antecipação de Recebíveis', data: [66.32, 54.34, 103.74, 67.95, 68.21],
+        backgroundColor: RED+'88', borderRadius: 0 },
+      { label: 'IOF + Mora + Outros', data: [20.28, 13.12, 36.33, 32.95, 35.14],
+        backgroundColor: YELLOW+'BB', borderRadius: 4 }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 10 } },
+      tooltip: { callbacks: { label: ctx => ' R$' + ctx.parsed.y.toFixed(1) + 'k' } }
+    },
+    scales: {
+      x: { stacked: true, grid: { display: false } },
+      y: { stacked: true, grid: { color: '#ECF0F1' },
+           ticks: { callback: v => 'R$' + v + 'k' } }
+    }
+  }
+});
+
+// ── JULIA: Alertas — Consultoria × Frete ────────────────────────────
+new Chart(document.getElementById('chartAlertas'), {
+  type: 'line',
+  data: {
+    labels: meses,
+    datasets: [
+      { label: 'Consultoria (R$ mil)', data: [30.35, 19.54, 50.62, 73.34, 85.01],
+        borderColor: RED, backgroundColor: RED+'22', fill: true,
+        tension: 0.4, pointRadius: 5, pointBackgroundColor: RED },
+      { label: 'Frete s/ Vendas (R$ mil)', data: [27.53, 40.62, 34.03, 39.59, 70.20],
+        borderColor: YELLOW, backgroundColor: YELLOW+'22', fill: true,
+        tension: 0.4, pointRadius: 5, pointBackgroundColor: YELLOW },
+      { label: 'Limite frete (meta 3% fat.)', data: [52.48, 52.15, 61.14, 52.63, 62.33],
+        borderColor: GREEN, borderDash: [5,5], pointRadius: 0, fill: false }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 10 } },
+      tooltip: { callbacks: { label: ctx => ' R$' + ctx.parsed.y.toFixed(1) + 'k' } }
+    },
+    scales: {
+      x: { grid: { display: false } },
+      y: { grid: { color: '#ECF0F1' }, ticks: { callback: v => 'R$' + v + 'k' } }
+    }
+  }
+});
+
+// ── JULIA: Devoluções ─────────────────────────────────────────────────
+new Chart(document.getElementById('chartDevolucoes'), {
+  type: 'bar',
+  data: {
+    labels: meses,
+    datasets: [
+      { label: 'Devoluções (R$ mil)', data: [113.52, 117.29, 19.22, 18.40, 82.09],
+        backgroundColor: [RED+'BB', RED+'BB', GREEN+'BB', GREEN+'BB', YELLOW+'BB'],
+        borderRadius: 4, yAxisID: 'yDev' },
+      { label: '% Rec. Bruta', data: [6.5, 6.8, 0.9, 1.0, 4.0],
+        type: 'line', borderColor: RED, tension: 0.4,
+        pointRadius: 5, pointBackgroundColor: RED, fill: false, yAxisID: 'yPct' },
+      { label: 'Meta 3%', data: [3, 3, 3, 3, 3],
+        type: 'line', borderColor: GREEN, borderDash: [5,5],
+        pointRadius: 0, fill: false, yAxisID: 'yPct' }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom', labels: { boxWidth: 10 } } },
+    scales: {
+      yDev: { type: 'linear', position: 'left', grid: { color: '#ECF0F1' },
+               ticks: { callback: v => 'R$' + v + 'k' } },
+      yPct: { type: 'linear', position: 'right', min: 0, max: 10,
+               grid: { display: false }, ticks: { callback: v => v + '%' } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ── JULIA: Fixos × Variáveis ─────────────────────────────────────────
+new Chart(document.getElementById('chartFixVar'), {
+  type: 'bar',
+  data: {
+    labels: meses,
+    datasets: [
+      { label: 'Custos Fixos (R$ mil)', data: [759.31, 793.99, 801.80, 854.07, 864.77],
+        backgroundColor: BLUE+'CC', borderRadius: 0 },
+      { label: 'Custos Variáveis (R$ mil)', data: [884.87, 924.19, 848.05, 841.67, 795.69],
+        backgroundColor: YELLOW+'99', borderRadius: 4 }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 10 } },
+      tooltip: { callbacks: { label: ctx => ' R$' + ctx.parsed.y.toFixed(1) + 'k' } }
+    },
+    scales: {
+      x: { grid: { display: false } },
+      y: { grid: { color: '#ECF0F1' }, ticks: { callback: v => 'R$' + v + 'k' } }
     }
   }
 });
