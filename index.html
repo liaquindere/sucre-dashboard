@@ -722,24 +722,24 @@
     <div class="section-icon">🏭</div>
     <div>
       <div class="section-title">Isabel — Indústria</div>
-      <div class="section-sub">Produção · Manutenção · Qualidade · Jan–Mai 2026</div>
+      <div class="section-sub">Empanados · Pastéis · Sucroc · Jan–Mai 2026 · Total 3 Linhas</div>
     </div>
   </div>
 
   <div class="cards">
     <div class="card vermelho">
       <div class="card-trend">⚙️</div>
-      <div class="card-label">Eficiência Empanados (Mai)</div>
+      <div class="card-label">Eficiência Linha Empanados (Mai)</div>
       <div class="card-value">68,4%</div>
-      <div class="card-meta">Real. 39.100 kg / Plan. 57.200 kg</div>
+      <div class="card-meta">Real. 39.100 / Plan. 57.200 · só empanados</div>
       <div class="card-badge vermelho">⚠ Menor eficiência do ano</div>
     </div>
-    <div class="card vermelho">
+    <div class="card amarelo">
       <div class="card-trend">📦</div>
-      <div class="card-label">Volume Produzido (Mai)</div>
-      <div class="card-value">39.100 kg</div>
-      <div class="card-meta">Meta: 57.200 kg · -18.100 kg atraso</div>
-      <div class="card-badge vermelho">⚠ 68,4% da meta</div>
+      <div class="card-label">Volume Total (Mai) — 3 Linhas</div>
+      <div class="card-value">42.843 kg</div>
+      <div class="card-meta">Empanados 39.100 · Pastéis+Sucroc 3.743</div>
+      <div class="card-badge amarelo">90,9% da meta (47.124 kg)</div>
     </div>
     <div class="card verde">
       <div class="card-trend">📊</div>
@@ -773,12 +773,33 @@
     <table>
       <tr><th>KPI</th><th>Meta</th><th>Jan</th><th>Fev</th><th>Mar</th><th>Abr</th><th>Mai</th><th>Média YTD</th><th>Status</th></tr>
       <tr><td>OEE — Eficiência Global (%)</td><td>85%</td><td>96,9%</td><td>88,0%</td><td>89,9%</td><td>98,2%</td><td>—</td><td>93,3%</td><td><span class="pill verde">Verde</span></td></tr>
-      <tr><td>Volume Produzido (kg/mês)</td><td>47.124</td><td>45.674</td><td>41.489</td><td>42.384</td><td>46.297</td><td>39.100</td><td>42.989</td><td><span class="pill vermelho">Vermelho</span></td></tr>
+      <tr><td>Volume Produzido — Total 3 Linhas (kg)</td><td>47.124</td><td>52.661</td><td>41.489</td><td>42.384</td><td>46.297</td><td>42.843</td><td>45.135</td><td><span class="pill amarelo">Amarelo</span></td></tr>
       <tr><td>Acurácia de Estoque</td><td>97%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>—</td><td>100%</td><td><span class="pill verde">Verde</span></td></tr>
       <tr><td>Taxa de Retrabalho</td><td>2%</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><span class="pill neutro">Aguardando</span></td></tr>
       <tr><td>Conformidade Qualidade</td><td>98%</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><span class="pill neutro">Aguardando</span></td></tr>
       <tr><td>Disponibilidade Mecânica</td><td>92%</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><span class="pill neutro">Aguardando</span></td></tr>
     </table>
+  </div>
+
+  <div class="charts-row" style="margin-top:20px">
+    <div class="chart-box">
+      <div class="chart-title">🏭 Mix de Produção por Linha — Mai 2026 (kg)</div>
+      <div class="chart-wrap" style="height:220px"><canvas id="chartLinhas"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">📈 YTD Total Produção × Meta (Jan–Mai 2026)</div>
+      <div class="chart-wrap" style="height:220px">
+        <table style="width:100%;font-size:0.82rem;border-collapse:collapse;margin-top:8px">
+          <tr style="background:#f8f8f8"><th style="padding:8px;text-align:left;border-bottom:2px solid #ddd">Mês</th><th style="padding:8px;text-align:right;border-bottom:2px solid #ddd">Total (kg)</th><th style="padding:8px;text-align:right;border-bottom:2px solid #ddd">Meta (kg)</th><th style="padding:8px;text-align:right;border-bottom:2px solid #ddd">% Ating.</th></tr>
+          <tr><td style="padding:7px 8px;border-bottom:1px solid #eee">Janeiro</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">52.661</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">47.124</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#388e3c;font-weight:600">111,8%</td></tr>
+          <tr><td style="padding:7px 8px;border-bottom:1px solid #eee">Fevereiro</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">41.489</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">47.124</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#e53935;font-weight:600">88,0%</td></tr>
+          <tr><td style="padding:7px 8px;border-bottom:1px solid #eee">Março</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">42.384</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">47.124</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#e53935;font-weight:600">89,9%</td></tr>
+          <tr><td style="padding:7px 8px;border-bottom:1px solid #eee">Abril</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">46.297</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">47.124</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#fb8c00;font-weight:600">98,2%</td></tr>
+          <tr><td style="padding:7px 8px;border-bottom:1px solid #eee">Maio</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">42.843</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee">47.124</td><td style="padding:7px 8px;text-align:right;border-bottom:1px solid #eee;color:#e53935;font-weight:600">90,9%</td></tr>
+          <tr style="font-weight:700;background:#f5f5f5"><td style="padding:8px">YTD Acumulado</td><td style="padding:8px;text-align:right">225.674</td><td style="padding:8px;text-align:right">235.620</td><td style="padding:8px;text-align:right;color:#e53935">95,8%</td></tr>
+        </table>
+      </div>
+    </div>
   </div>
 
   <!-- TORRE DE CONTROLE EMPANADOS -->
@@ -793,10 +814,10 @@
   <div class="cards">
     <div class="card vermelho">
       <div class="card-trend">📦</div>
-      <div class="card-label">Qtd Produzida (Mai)</div>
+      <div class="card-label">Qtd Produzida (Mai) — Empanados</div>
       <div class="card-value">39.100 kg</div>
-      <div class="card-meta">Meta: 57.200 kg · 25 dias de produção</div>
-      <div class="card-badge vermelho">⚠ −18.100 kg vs planejado</div>
+      <div class="card-meta">91,3% do total fábrica (42.843 kg) · 25 dias</div>
+      <div class="card-badge vermelho">⚠ −18.100 kg vs planejado (57.200)</div>
     </div>
     <div class="card vermelho">
       <div class="card-trend">⚡</div>
@@ -1110,9 +1131,9 @@ new Chart(document.getElementById('chartVolume'), {
   data: {
     labels: meses,
     datasets: [
-      { label: 'Volume Realizado (kg)', data: [45674, 41489, 42384, 46297, 39100],
+      { label: 'Volume Realizado — Total 3 Linhas (kg)', data: [52661, 41489, 42384, 46297, 42843],
         backgroundColor: GREEN+'BB', borderRadius: 6 },
-      { label: 'Meta (47.124 kg)', data: [47124, 47124, 47124, 47124, 47124],
+      { label: 'Meta Mensal (47.124 kg)', data: [47124, 47124, 47124, 47124, 47124],
         type: 'line', borderColor: YELLOW, borderDash: [5,5],
         pointRadius: 0, fill: false }
     ]
@@ -1120,6 +1141,32 @@ new Chart(document.getElementById('chartVolume'), {
   options: lineOpts('kg')
 });
 
+
+
+// ── ISABEL: Mix de Linhas Mai 2026 ───────────────────────────────────
+new Chart(document.getElementById('chartLinhas'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Empanados — Coxinhas + Bolaço  91,3%','Pastéis + Sucroc  8,7%'],
+    datasets: [{
+      data: [39100, 3743],
+      backgroundColor: [RED+'CC', YELLOW+'BB'],
+      borderWidth: 3, borderColor: '#fff'
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12, font: { size: 11 } } },
+      tooltip: {
+        callbacks: {
+          label: ctx => ' ' + ctx.parsed.toLocaleString('pt-BR') + ' kg (' +
+            ((ctx.parsed/42843*100).toFixed(1)) + '%)'
+        }
+      }
+    }
+  }
+});
 
 // ── ISABEL: Torre de Controle — Empanados ────────────────────────────
 new Chart(document.getElementById('chartTorre'), {
