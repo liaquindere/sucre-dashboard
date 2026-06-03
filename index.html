@@ -609,6 +609,93 @@
     </div>
   </div>
 
+
+  <!-- ───────────────────────────────────────────────────────── -->
+  <!-- NOVOS BLOCOS: Canal · Redes · Categoria · Geo · Volume   -->
+  <!-- ───────────────────────────────────────────────────────── -->
+
+  <!-- ── SPLIT B2B × B2C ────────────────────────────────────── -->
+  <div style="display:flex;align-items:center;gap:12px;margin:28px 0 14px">
+    <div style="height:2px;flex:1;background:var(--gray-200)"></div>
+    <span style="font-size:11px;font-weight:700;color:var(--gray-500);letter-spacing:1px;text-transform:uppercase">🔀 Canal B2B × B2C</span>
+    <div style="height:2px;flex:1;background:var(--gray-200)"></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px">
+    <div class="card" style="border-left:4px solid var(--pink)">
+      <div class="card-trend">🏭</div>
+      <div class="card-label">Canal B2B — Maio 2026</div>
+      <div class="card-value" style="font-size:22px">R$ 2.000k</div>
+      <div class="card-meta">YTD Jan–Mai: R$ 9.016k · 638 notas emitidas</div>
+      <div class="card-meta" style="margin-top:3px">TM: R$ 14.132 · R$/KG: R$ 40,89</div>
+      <div class="card-badge verde" style="margin-top:8px">✅ 103% da meta · YoY +7%</div>
+    </div>
+    <div class="card" style="border-left:4px solid var(--mint)">
+      <div class="card-trend">🛒</div>
+      <div class="card-label">Canal B2C — Acumulado Jan–Mai 2026 🚀</div>
+      <div class="card-value" style="font-size:22px">R$ 458k</div>
+      <div class="card-meta">Faturamento YTD · TM: R$ 114,90 (+5% YoY)</div>
+      <div class="card-meta" style="margin-top:3px">3.984 notas emitidas (acumulado)</div>
+      <div class="card-badge verde" style="margin-top:8px">🚀 +177% YoY — canal em forte aceleração</div>
+    </div>
+  </div>
+
+  <!-- ── TOP REDES + MIX CATEGORIA ──────────────────────────── -->
+  <div style="display:flex;align-items:center;gap:12px;margin:0 0 14px">
+    <div style="height:2px;flex:1;background:var(--gray-200)"></div>
+    <span style="font-size:11px;font-weight:700;color:var(--gray-500);letter-spacing:1px;text-transform:uppercase">🏪 Concentração · Portfólio</span>
+    <div style="height:2px;flex:1;background:var(--gray-200)"></div>
+  </div>
+  <div class="charts-row-equal" style="margin-bottom:24px">
+    <div class="chart-box">
+      <div class="chart-title">🏪 Top Redes — Concentração de Clientes B2B</div>
+      <div style="font-size:11px;color:var(--pink);font-weight:600;margin-bottom:8px">⚠️ POLE = 31,4% do faturamento — risco de concentração</div>
+      <div class="chart-wrap" style="height:200px"><canvas id="chartRedes"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">🍽️ Mix por Categoria — Faturamento Acumulado</div>
+      <div style="font-size:11px;color:var(--success);font-weight:600;margin-bottom:8px">💡 Sucroc cresce +63% YoY · Coxinha = 92,5% da receita</div>
+      <div class="chart-wrap" style="height:200px"><canvas id="chartCategoria"></canvas></div>
+    </div>
+  </div>
+
+  <!-- ── ESTADOS + VOLUME × PM ──────────────────────────────── -->
+  <div style="display:flex;align-items:center;gap:12px;margin:0 0 14px">
+    <div style="height:2px;flex:1;background:var(--gray-200)"></div>
+    <span style="font-size:11px;font-weight:700;color:var(--gray-500);letter-spacing:1px;text-transform:uppercase">🗺️ Geografia · Volume vs Preço</span>
+    <div style="height:2px;flex:1;background:var(--gray-200)"></div>
+  </div>
+  <div class="charts-row-equal" style="margin-bottom:24px">
+    <div class="chart-box">
+      <div class="chart-title">🗺️ Presença por Estado — % Faturamento B2B</div>
+      <div style="font-size:11px;color:var(--pink);font-weight:600;margin-bottom:8px">⚠️ Ceará = 83,5% — expansão nacional em andamento</div>
+      <div class="chart-wrap" style="height:220px"><canvas id="chartEstados"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">📦 Volume KG × Preço Médio/KG — Tendência Mensal</div>
+      <div style="font-size:11px;color:var(--warning);font-weight:600;margin-bottom:8px">⚠️ Volume sobe mas PM/KG cai — pressão de margem</div>
+      <div class="chart-wrap" style="height:220px"><canvas id="chartVolumePM"></canvas></div>
+    </div>
+  </div>
+
+  <!-- ── B2C PRODUTOS + EVOLUÇÃO ─────────────────────────────── -->
+  <div style="display:flex;align-items:center;gap:12px;margin:0 0 14px">
+    <div style="height:2px;flex:1;background:var(--gray-200)"></div>
+    <span style="font-size:11px;font-weight:700;color:var(--gray-500);letter-spacing:1px;text-transform:uppercase">🛒 B2C — Produtos & Evolução</span>
+    <div style="height:2px;flex:1;background:var(--gray-200)"></div>
+  </div>
+  <div class="charts-row-equal" style="margin-bottom:24px">
+    <div class="chart-box">
+      <div class="chart-title">🛒 Top Produtos B2C — Faturamento Acumulado</div>
+      <div style="font-size:11px;color:var(--success);font-weight:600;margin-bottom:8px">💡 Tortas lideram o B2C — portfólio diferente do B2B</div>
+      <div class="chart-wrap" style="height:200px"><canvas id="chartB2CProdutos"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">📈 Evolução Mensal B2C (R$ mil)</div>
+      <div style="font-size:11px;color:var(--success);font-weight:600;margin-bottom:8px">💡 Mar e Abr acima de R$ 119k — potencial de consistência</div>
+      <div class="chart-wrap" style="height:200px"><canvas id="chartB2CEvol"></canvas></div>
+    </div>
+  </div>
+
   <div class="table-box">
     <div class="chart-title" style="margin-bottom:12px">📋 Todos os KPIs — Cândido</div>
     <table>
@@ -1065,6 +1152,163 @@ new Chart(document.getElementById('chartCiclo'), {
     scales: {
       x: { grid: { display: false } },
       y: { title: { display: true, text: 'dias' }, grid: { color: '#ECF0F1' } }
+    }
+  }
+});
+
+// ── CÂNDIDO: Top Redes ────────────────────────────────────────
+new Chart(document.getElementById('chartRedes'), {
+  type: 'bar',
+  data: {
+    labels: ['POLE Distribuidora','Mercadinhos S. Luiz','Assaí CE','Pinheiro','Atacadão CE','G. Mateus CE','Dona de Casa'],
+    datasets: [{
+      data: [2834.56, 1855.83, 1024.14, 539.12, 358.53, 263.74, 159.20],
+      backgroundColor: [RED+'CC',RED+'99',RED+'77',BLUE+'BB',BLUE+'88',BLUE+'66',BLUE+'44'],
+      borderRadius: 4
+    }]
+  },
+  options: {
+    indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ' R$ ' + ctx.parsed.x.toLocaleString('pt-BR') + 'k' } }
+    },
+    scales: {
+      x: { grid: { color: '#ECF0F1' }, ticks: { callback: v => 'R$'+v+'k' } },
+      y: { grid: { display: false }, ticks: { font: { size: 10 } } }
+    }
+  }
+});
+
+// ── CÂNDIDO: Mix Categoria ────────────────────────────────────
+new Chart(document.getElementById('chartCategoria'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Coxinha 92,5%','Pastel 4,5%','Sucroc 2,4%','Tortas 0,2%'],
+    datasets: [{
+      data: [8336.6, 409.4, 215.4, 16.4],
+      backgroundColor: [RED+'CC', YELLOW+'CC', BLUE+'CC', GRAY+'BB'],
+      borderWidth: 3, borderColor: '#fff'
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 12, padding: 10, font: { size: 11 } } },
+      tooltip: {
+        callbacks: {
+          label: ctx => {
+            const pcts = [92.5, 4.5, 2.4, 0.2];
+            const yoys = ['+17%', '-2%', '+63% 🚀', '-53%'];
+            return ' ' + ctx.label.split(' ')[0] + ': R$' + (ctx.raw/1000).toFixed(0) + 'k · YoY ' + yoys[ctx.dataIndex];
+          }
+        }
+      }
+    }
+  }
+});
+
+// ── CÂNDIDO: Estados ──────────────────────────────────────────
+new Chart(document.getElementById('chartEstados'), {
+  type: 'bar',
+  data: {
+    labels: ['Ceará','Piauí','Bahia','Pernambuco','Dist. Federal','R.G. Norte','Paraíba','Paraná','Outros'],
+    datasets: [{
+      data: [83.5, 2.11, 2.07, 2.06, 1.95, 1.89, 1.68, 1.62, 3.12],
+      backgroundColor: [RED+'CC',BLUE+'BB',BLUE+'BB',BLUE+'BB',BLUE+'99',BLUE+'99',BLUE+'88',BLUE+'88',GRAY+'88'],
+      borderRadius: 4
+    }]
+  },
+  options: {
+    indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ' ' + ctx.parsed.x.toFixed(2) + '% do faturamento' } }
+    },
+    scales: {
+      x: { max: 90, grid: { color: '#ECF0F1' }, ticks: { callback: v => v + '%' } },
+      y: { grid: { display: false }, ticks: { font: { size: 10 } } }
+    }
+  }
+});
+
+// ── CÂNDIDO: Volume × PM/KG ───────────────────────────────────
+new Chart(document.getElementById('chartVolumePM'), {
+  type: 'line',
+  data: {
+    labels: meses,
+    datasets: [
+      {
+        label: 'Volume (mil kg)',
+        data: [41.054, 37.142, 44.422, 42.359, 48.915],
+        borderColor: BLUE, backgroundColor: BLUE+'22', fill: true,
+        tension: 0.4, pointRadius: 5, pointBackgroundColor: BLUE,
+        yAxisID: 'yVol'
+      },
+      {
+        label: 'Preço Médio/KG (R$)',
+        data: [40.13, 44.03, 44.45, 41.52, 40.89],
+        borderColor: YELLOW, backgroundColor: 'transparent',
+        tension: 0.4, pointRadius: 5, pointBackgroundColor: YELLOW,
+        borderDash: [5,3], yAxisID: 'yPM'
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom', labels: { boxWidth: 10, padding: 12 } } },
+    scales: {
+      yVol: { type: 'linear', position: 'left',  title: { display: true, text: 'mil kg' }, grid: { color: '#ECF0F1' } },
+      yPM:  { type: 'linear', position: 'right', title: { display: true, text: 'R$/KG'  }, grid: { drawOnChartArea: false }, min: 35, max: 50 }
+    }
+  }
+});
+
+// ── CÂNDIDO: B2C Top Produtos ─────────────────────────────────
+new Chart(document.getElementById('chartB2CProdutos'), {
+  type: 'bar',
+  data: {
+    labels: ['Torta Brownie Aro 20','Ovo Nutella 600G','Torta Brownie Aro 15','Cx. Frango 375G','Cx. C. Sol 375G'],
+    datasets: [{
+      data: [162.529, 103.782, 62.803, 26.957, 14.050],
+      backgroundColor: [RED+'CC',RED+'AA',RED+'88',BLUE+'BB',BLUE+'88'],
+      borderRadius: 4
+    }]
+  },
+  options: {
+    indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ' R$ ' + ctx.parsed.x.toLocaleString('pt-BR') + 'k' } }
+    },
+    scales: {
+      x: { grid: { color: '#ECF0F1' }, ticks: { callback: v => 'R$'+v+'k' } },
+      y: { grid: { display: false }, ticks: { font: { size: 10 } } }
+    }
+  }
+});
+
+// ── CÂNDIDO: B2C Evolução Mensal ──────────────────────────────
+new Chart(document.getElementById('chartB2CEvol'), {
+  type: 'bar',
+  data: {
+    labels: meses,
+    datasets: [{
+      label: 'B2C (R$ mil)',
+      data: [79.829, 61.781, 119.326, 119.221, 77.618],
+      backgroundColor: [BLUE+'BB', RED+'BB', GREEN+'BB', GREEN+'BB', BLUE+'BB'],
+      borderRadius: 6
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ' R$ ' + ctx.parsed.y.toLocaleString('pt-BR') + 'k' } }
+    },
+    scales: {
+      x: { grid: { display: false } },
+      y: { grid: { color: '#ECF0F1' }, ticks: { callback: v => 'R$'+v+'k' } }
     }
   }
 });
