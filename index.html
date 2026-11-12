@@ -953,8 +953,8 @@ Chart.defaults.color = '#78716C';
 
 const legendNoRef = { labels: { filter: it => !it.text.startsWith('Ref') } };
 function refLine(val, label, n) {
-  return { label: 'Ref · '+label, data: Array(n||10).fill(val), borderColor: cRef,
-    borderWidth: 1.2, borderDash: [5,4], pointRadius: 0, fill: false, tension: 0 };
+  return { type: 'line', label: 'Ref · '+label, data: Array(n||10).fill(val), borderColor: cRef,
+    borderWidth: 1.2, borderDash: [5,4], pointRadius: 0, fill: false, tension: 0, order: 0 };
 }
 
 /* ═══ SPARKLINES ═══ */
