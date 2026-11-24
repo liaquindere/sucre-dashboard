@@ -332,7 +332,7 @@ details.annex .table-box { border-radius: 0 0 var(--radius) var(--radius); borde
 
   <div class="cockpit-note">
     <h3>Leitura do período · Outubro 2026</h3>
-    <p>O acumulado do ano cresceu 23,1% sobre 2025, com outubro entregando R$ 2,37 milhões (+24% vs out/25). A rentabilidade consolidou a virada: margem líquida acumulada de +2,9% (R$ 575 mil) e EBITDA a um décimo da meta no mês. O ciclo financeiro fechou dentro da meta pela terceira vez no ano, e a logística virou o jogo: frete abaixo da meta e entregas de outubro com 97% de pontualidade. Os freios seguem nomeados: alavancagem voltou a subir (2,69x), custo de insumos acima do orçado e turnover operacional no pico do ano.</p>
+    <p>O acumulado do ano cresceu 23,1% sobre 2025, com outubro entregando R$ 2,37 milhões (+24% vs out/25). A rentabilidade consolidou a virada: margem líquida acumulada de +2,9% (R$ 575 mil) e EBITDA a um décimo da meta no mês. O ciclo financeiro fechou dentro da meta pela terceira vez no ano e o frete ficou abaixo da meta pelo segundo mês seguido. Os freios seguem nomeados: alavancagem voltou a subir (2,69x), o OTIF de outubro fechou em 31% (entregas do fim do mês concluídas só em novembro, limitadas pela produção), custo de insumos acima do orçado e turnover operacional no pico do ano.</p>
   </div>
 
   <div class="sec-title">Cockpit do Conselho <span class="sec-note">os 7 números do mês · competência out/26</span></div>
@@ -383,11 +383,11 @@ details.annex .table-box { border-radius: 0 0 var(--radius) var(--radius); borde
       <div class="card-foot"><span class="chip ok">Acompanha a venda</span><span class="chip warn">Out abaixo do plano</span></div>
     </div>
     <div class="card crit">
-      <div class="card-label">OTIF · último mês fechado (set)</div>
-      <div class="card-value">61<span class="unit">%</span></div>
-      <div class="card-meta">Meta 90% · média Jan–Set 61% · Out em apuração: 97% das entregas concluídas no prazo</div>
+      <div class="card-label">OTIF · Out (fechado em 24/11)</div>
+      <div class="card-value">31<span class="unit">%</span></div>
+      <div class="card-meta">Meta 90% · média Jan–Out 58% · pior mês do ano: entregas limitadas pela produção e concluídas em novembro</div>
       <div class="spark-wrap"><canvas id="spkOtif"></canvas></div>
-      <div class="card-foot"><span class="chip crit">Abaixo da meta</span><span class="partial">out em apuração</span></div>
+      <div class="card-foot"><span class="chip crit">Crítico · plano em curso</span></div>
     </div>
   </div>
 
@@ -395,7 +395,7 @@ details.annex .table-box { border-radius: 0 0 var(--radius) var(--radius); borde
     <div class="hl-box up">
       <h4>Destaques do mês</h4>
       <ul>
-        <li><span class="hl-mark">▲</span><span><strong>Logística virou o jogo:</strong> frete 2,9% do faturamento (meta 3%, 2º mês seguido), lead time de 5,4 dias (era 13,6 em 2025) e armazenagem 74% menor que no ano passado.</span></li>
+        <li><span class="hl-mark">▲</span><span><strong>Custo logístico sob controle:</strong> frete 2,9% do faturamento (meta 3%, 2º mês seguido) e armazenagem 74% menor que no ano passado.</span></li>
         <li><span class="hl-mark">▲</span><span><strong>Custo de pessoal em 18,8%</strong> do faturamento, melhor nível do ano, com acumulado de 21,9% já dentro da meta de 22%.</span></li>
         <li><span class="hl-mark">▲</span><span><strong>Clientes em queda recuperaram R$ 370 mil</strong> do gap em um mês; 2026 superou 2025 em 8 dos 10 meses no principal distribuidor.</span></li>
       </ul>
@@ -405,6 +405,7 @@ details.annex .table-box { border-radius: 0 0 var(--radius) var(--radius); borde
       <ul>
         <li><span class="hl-mark">▼</span><span><strong>Alavancagem subiu para 2,69x</strong> e o custo das antecipações dobrou no mês (R$ 64 mil): desalavancar segue como prioridade nº 1.</span></li>
         <li><span class="hl-mark">▼</span><span><strong>Turnover de 8,8% no mês</strong>, pico do ano, concentrado na operação (11,9%); 9 dos 10 desligamentos na Indústria.</span></li>
+        <li><span class="hl-mark">▼</span><span><strong>OTIF de outubro fechou em 31%:</strong> 38 das 99 notas entregues fora do prazo e 30 ainda pendentes em 24/11 (R$ 712 mil); causa raiz na produção abaixo do plano.</span></li>
         <li><span class="hl-mark">▼</span><span><strong>Insumos acima do orçado:</strong> saving de +3,4% no mês (meta: economia de 2,5%) e verba comercial no maior mês do ano (R$ 296 mil em out, +80% vs out/25).</span></li>
       </ul>
     </div>
@@ -664,14 +665,14 @@ details.annex .table-box { border-radius: 0 0 var(--radius) var(--radius); borde
           <tr><td>PMR</td><td>45d</td><td>50d</td><td>50d</td><td>51d</td><td>56d</td><td>55d</td><td>49d</td><td>42d</td><td>54d</td><td>49d</td><td class="cur">49d</td><td>51d</td></tr>
           <tr><td>PME (insumos)</td><td>10d</td><td>22d</td><td>29d</td><td>25d</td><td>24d</td><td>21d</td><td>25d</td><td>26d</td><td>23d</td><td>21d</td><td class="cur">24d</td><td>24d</td></tr>
           <tr><td>PMP</td><td>50d</td><td>38d</td><td>43d</td><td>43d</td><td>45d</td><td>39d</td><td>36d</td><td>51d</td><td>49d</td><td>49d</td><td class="cur">51d</td><td>44d</td></tr>
-          <tr><td>OTIF</td><td>90%</td><td>67%</td><td>63%</td><td>59%</td><td>58%</td><td>56%</td><td>47%</td><td>73%</td><td>68%</td><td>61%</td><td class="cur">apuração*</td><td>61% (fechados)</td></tr>
+          <tr><td>OTIF</td><td>90%</td><td>67%</td><td>63%</td><td>59%</td><td>58%</td><td>56%</td><td>47%</td><td>73%</td><td>68%</td><td>61%</td><td class="cur">31%</td><td>58%</td></tr>
           <tr><td>Frete / faturamento</td><td>3%</td><td>2,4%</td><td>3,6%</td><td>3,2%</td><td>3,7%</td><td>4,4%</td><td>3,6%</td><td>3,7%</td><td>3,8%</td><td>2,8%</td><td class="cur">2,9%</td><td>3,4%</td></tr>
           <tr><td>Saving de compras</td><td>−2,5%</td><td>−1,8%</td><td>−2,4%</td><td>−1,5%</td><td>−5,0%</td><td>+1,4%</td><td>0,0%</td><td>+2,4%</td><td>+4,3%</td><td>+5,8%</td><td class="cur">+3,4%</td><td>+0,7%</td></tr>
           <tr><td>Acurácia de estoque</td><td>97%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td><td>99,7%</td><td>100%</td><td>100%</td><td>100%</td><td class="cur">100%</td><td>100%</td></tr>
           <tr><td>Dívida líq./EBITDA</td><td>&lt;1,5x</td><td>3,06x</td><td>3,38x</td><td>3,00x</td><td>2,84x</td><td>2,36x</td><td>2,64x</td><td>2,57x</td><td>2,77x</td><td>2,52x</td><td class="cur">2,69x</td><td>2,78x</td></tr>
         </tbody>
       </table>
-      <div class="chart-note">* OTIF de outubro em apuração: entregas do mês ainda em execução na data de corte. Das entregas concluídas, 97% no prazo. Média considera apenas meses fechados (Jan–Set). Saving negativo = economia vs orçado.</div>
+      <div class="chart-note">OTIF de outubro fechado em 24/11 (31%), substituindo a prévia publicada no fechamento. Saving negativo = economia vs orçado.</div>
     </div>
   </details>
 </div>
@@ -750,20 +751,20 @@ details.annex .table-box { border-radius: 0 0 var(--radius) var(--radius); borde
       <div class="card-meta">Meta 3% · 2º mês seguido dentro · armazenagem −74% vs 2025</div>
       <div class="card-foot"><span class="chip ok">Dentro da meta</span></div>
     </div>
-    <div class="card ok">
+    <div class="card crit">
       <div class="card-label">Lead time de entrega · Out</div>
-      <div class="card-value">5,4<span class="unit">dias</span></div>
-      <div class="card-meta">Era 13,6 dias em 2025 · queda de 60%</div>
-      <div class="card-foot"><span class="chip ok">Grande avanço</span></div>
+      <div class="card-value">12,6<span class="unit">dias</span></div>
+      <div class="card-meta">Fechado em 24/11 · entregas do fim do mês concluídas em novembro</div>
+      <div class="card-foot"><span class="chip crit">Limitado pela produção</span></div>
     </div>
   </div>
 
   <div class="charts-row">
     <div class="chart-card">
-      <div class="chart-title">OTIF · meses fechados Jan–Set (%)</div>
-      <div class="chart-sub">Referência: meta 90% · outubro em apuração (fora do gráfico)</div>
+      <div class="chart-title">OTIF · Jan–Out (%)</div>
+      <div class="chart-sub">Referência: meta 90% · outubro fechado em 24/11</div>
       <div class="chart-wrap"><canvas id="chOtif"></canvas></div>
-      <div class="chart-note">Outubro em apuração: das entregas já concluídas, 97% no prazo e 100% completas (67 notas ainda em rota na data de corte). Reapresentação no fechamento de novembro.</div>
+      <div class="chart-note">Outubro fechou em 31%, o pior mês do ano: das 99 notas, 31 no prazo, 38 fora do prazo (entregues em novembro) e 30 ainda pendentes em 24/11 (R$ 712 mil). Causa raiz: produção 14% abaixo do plano concentrou faturamento e entregas no fim do mês. Reapresentado conforme a política de prévias.</div>
     </div>
     <div class="chart-card">
       <div class="chart-title">Frete / faturamento · Jan–Out (%)</div>
@@ -882,7 +883,7 @@ details.annex .table-box { border-radius: 0 0 var(--radius) var(--radius); borde
         <dt>Faturamento de outubro</dt><dd>Consolidado por Performance B2B + B2C (R$ 2,37mi); o BI Faturamento Gerencial ainda exibia valor parcial na data de corte (entregas em lançamento). Abas de verba e devolução do Gerencial estão íntegras e foram usadas.</dd>
         <dt>Absenteísmo</dt><dd>Série recalculada em out/26 (base: % das horas úteis, folha). Valores anteriores publicados nesta plataforma (ex.: 14% em jul) usavam outra régua e não são comparáveis.</dd>
         <dt>Ciclo financeiro</dt><dd>Série Jan–Out recalculada pela Controladoria no fechamento de outubro; substitui a série publicada em agosto.</dd>
-        <dt>OTIF</dt><dd>Publicado sempre pelo mês fechado; outubro aparece como "em apuração" e será reapresentado.</dd>
+        <dt>OTIF</dt><dd>Publicado sempre pelo mês fechado. Outubro foi reapresentado em 24/11 com o fim das entregas: fechou em 31% (a prévia de 97% refletia apenas o subconjunto entregue cedo).</dd>
         <dt>Verba comercial</dt><dd>Fonte oficial: aba Verba do BI Faturamento Gerencial (R$ 1,99mi Jan–Out; o acumulado exibido no BI inclui novembro parcial). O consolidado CTM do Painel Executivo soma verbas, pessoas do time comercial e outros custos (R$ 4,4mi YTD na base razão) e é análise gerencial interna: não é publicado aqui como verba nem como "investimento comercial".</dd>
       </dl>
     </div>
@@ -932,7 +933,7 @@ const outrasR  = [42.9,7.2,0.7,87.9,78.2,77.5,91.7,75.9,76.7,74.8];
 const ebitdaOp = ebitdaR.map((v,i)=>+(v-outrasR[i]).toFixed(1));
 const ciclo    = [34,36,33,35,37,38,17,28,21,22];
 const divida   = [3.06,3.38,3.00,2.84,2.36,2.64,2.57,2.77,2.52,2.69];
-const otifFech = [67,63,59,58,56,47,73,68,61];                         // Jan–Set fechados
+const otifFech = [67,63,59,58,56,47,73,68,61,31];                      // Jan–Out fechados (out apurado em 24/11)
 const frete    = [2.4,3.6,3.2,3.7,4.4,3.6,3.7,3.8,2.8,2.9];
 const prod     = [51447,40318,42242,46292,42646,46643,61888,48622,47811,43003];
 const reclam   = [23,15,8,7,7,3,6,14,11,7];
@@ -1058,9 +1059,9 @@ new Chart(document.getElementById('chDivida'), {
 /* ═══ OTIF ═══ */
 new Chart(document.getElementById('chOtif'), {
   type: 'bar',
-  data: { labels: M9, datasets: [
+  data: { labels: M10, datasets: [
     { label: 'OTIF', data: otifFech, backgroundColor: otifFech.map(v=> v>=90 ? cMain : '#D9A0AC'), borderRadius: 5 },
-    refLine(90, 'meta 90%', 9)
+    refLine(90, 'meta 90%', 10)
   ]},
   options: { responsive: true, maintainAspectRatio: false,
     plugins: { legend: { position: 'bottom', ...legendNoRef },
